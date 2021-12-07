@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: cornsilk;
+    /* width: 600px;
+    height: 600px; */
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 25px;
+    justify-content: center;
+    background: black;
+    padding-top: 0;
+    padding-bottom: 0%;
+    
+}
+.ticTacToeTitle {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.cell {
+    height: auto;
+    width: auto;
+    background-color: cornsilk;
+    cursor: pointer;
+}
+.status-action {
+    padding: auto;
+    margin-bottom: 30px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    font-size: 2rem;   
+}
+
+.reset {
+    cursor: pointer;
+}
+.reset:hover {
+    color: darkblue;
+}
+
+.x,
+.o {
+    cursor: default;
+}
+.x::after {
+    content: 'x';
+    font-size: 200px;
+    color: black;
+}
+.x::before {
+    content: 'x';
+    font-size: 200px;
+}
+.o::before {
+    content: 'o';
+    font-size: 200px;
+}
+.o::after{
+    content: 'x';
+    font-size: 200px;
+    color: black;
+}
+
+.x::after,
+.o::after {
+    font-size: 165px;
+}
